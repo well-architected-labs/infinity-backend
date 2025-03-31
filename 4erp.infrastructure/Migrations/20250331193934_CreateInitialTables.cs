@@ -437,14 +437,17 @@ namespace _4erp.infrastructure.Migrations
                 values: new object[,]
                 {
                     { new Guid("2025e44f-a232-43a5-9b8c-769fbd18a06f"), "administrator:vacancy:create", "Pode criar vagas no sistema", "Criador de vagas", new Guid("ec9f1294-3ac6-4496-9ace-13a10056633c") },
+                    { new Guid("3f87c5ea-edc8-4826-b67b-396a0d134bef"), "administrator:company:account:edit", "Pode editar suas configurações de conta", "Pode editar suas configurações de conta", new Guid("6f8a65c6-fc8f-439f-bb92-28c2253c000b") },
                     { new Guid("44a3dc2f-1810-4957-8bd3-0e526ee8d44f"), "administrator:person:vacancy:view", "Pode criar vagas no sistema", "Pode ver vagas disponíveis", new Guid("786bc7e7-8365-4d08-90fb-7fc26d284d16") },
                     { new Guid("4852b3ab-dd40-47a6-9548-643ae0f6967e"), "administrator:vacancy:read", "Pode ver vagas no sistema", "Leitor de vagas", new Guid("ec9f1294-3ac6-4496-9ace-13a10056633c") },
                     { new Guid("4a5a2b1d-f0e2-493d-8231-e975a295006b"), "administrator:user:create", "Pode criar uma nova empresa no sistema", "Pode criar uma nova empresa", new Guid("ec9f1294-3ac6-4496-9ace-13a10056633c") },
                     { new Guid("6b7fc3b4-6c16-41ee-a6ab-0c7dfd21d41e"), "administrator:company:vacancy:create", "Pode criar vagas no sistema", "Criador de vagas", new Guid("6f8a65c6-fc8f-439f-bb92-28c2253c000b") },
                     { new Guid("72bdf067-cc4b-4e36-983b-cb1e7284af48"), "administrator:vacancy:remove", "Pode remover vagas no sistema", "Removedor de vagas", new Guid("ec9f1294-3ac6-4496-9ace-13a10056633c") },
                     { new Guid("8cb9c7e0-ba1a-452a-b0b3-49cc930a049c"), "administrator:company:editor", "Pode editar uma nova empresa no sistema", "Pode editar uma nova empresa", new Guid("ec9f1294-3ac6-4496-9ace-13a10056633c") },
+                    { new Guid("98593af7-4cf6-4cfd-8947-bc6cfae07229"), "administrator:account:edit", "Pode editar suas configurações de conta", "Pode editar suas configurações de conta", new Guid("ec9f1294-3ac6-4496-9ace-13a10056633c") },
                     { new Guid("9d631e92-5e18-40c5-bb62-a76ef782a77e"), "administrator:person:candidate:create", "Pode editar vagas no sistema", "Pode se candidatar a uma vaga", new Guid("786bc7e7-8365-4d08-90fb-7fc26d284d16") },
                     { new Guid("a490ea3e-ce26-4d2d-b2a2-77a28cc824cb"), "administrator:company:vacancy:editor", "Pode editar vagas no sistema", "Editor de vagas", new Guid("6f8a65c6-fc8f-439f-bb92-28c2253c000b") },
+                    { new Guid("a77e474c-6047-4914-941d-29babbbe07b0"), "administrator:person:account:edit", "Pode editar suas configurações de conta", "Pode editar suas configurações de conta", new Guid("786bc7e7-8365-4d08-90fb-7fc26d284d16") },
                     { new Guid("b2d5653f-4e4c-4ec1-94f9-bd458b72d27a"), "administrator:vacancy:editor", "Pode editar vagas no sistema", "Editor de vagas", new Guid("ec9f1294-3ac6-4496-9ace-13a10056633c") },
                     { new Guid("b2d9a2bf-62e1-4ce2-b5a5-2c9d6002d01c"), "administrator:user:read", "Pode ler usuários no sistema", "Pode ler usuários", new Guid("ec9f1294-3ac6-4496-9ace-13a10056633c") },
                     { new Guid("b4eff319-159c-4cc9-bcb1-0b36c574900f"), "administrator:user:editor", "Pode editar um novo usuários", "Pode editar um novo usuários", new Guid("ec9f1294-3ac6-4496-9ace-13a10056633c") },

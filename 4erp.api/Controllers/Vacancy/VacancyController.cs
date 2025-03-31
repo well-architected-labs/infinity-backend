@@ -46,40 +46,19 @@ public class VacancyControlador : ControllerBase
         [FromQuery] DateTime? dateEnd = null,
         [FromQuery] List<string>? skills = null,
         [FromQuery] string? ocupation = null,
-        [FromQuery] string? status = null)
+        [FromQuery] string? status = null
+        )
     {
-
-
-        Expression<Func<Vacancy, bool>> predicate = u => u.CreatedAt != null;
-
-        if (dateInit is not null && dateEnd is not null && ocupation is not null && status is not null)
-            predicate = u => u.DateInit != null && u.DateInit != null ? u.DateInit >= dateEnd && u.DateEnd <= dateInit : u.CreatedAt != null &&  ocupation != null && u.Ocupation != null && u.Ocupation.Id != Guid.Empty ? u.Ocupation.Id.Equals(Guid.Parse(ocupation)) : u.CreatedAt != null && u.Status != null && u.Status.Name != null && u.Status.Name.Contains(status);
-
-        if (ocupation is not null)
-            predicate = u => ocupation != null && u.Ocupation != null && u.Ocupation.Id != Guid.Empty ? u.Ocupation.Id.Equals(Guid.Parse(ocupation)) : u.CreatedAt != null;
-
-        if (title is not null)
-            predicate = u => u.Title != null && u.Title.Contains(title);
-
-        if (status is not null)
-            predicate = u => u.Status != null && u.Status.Name != null && u.Status.Name.Contains(status);
-
-        if (dateInit is not null && dateEnd is not null && ocupation is not null && status is not null)
-            predicate = u => u.DateInit != null && u.DateInit != null ? u.DateInit >= dateEnd && u.DateEnd <= dateInit : u.CreatedAt != null ;
-
-
-
-        var vacancies = await _repository.GetAllAsync(
+        return await _vacancyService.GetAllAsync(
             skip,
             take,
-            predicate,
-            c => c.Ocupation,
-            c => c.Status,
-            c => c.Skills,
-            c => c.Person
+            title,
+            dateInit,
+            dateEnd,
+            skills,
+            ocupation,
+            status
         );
-        return vacancies;
-
     }
 
 

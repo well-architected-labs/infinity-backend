@@ -221,6 +221,14 @@ namespace _4erp.infrastructure.Migrations
                         },
                         new
                         {
+                            Id = new Guid("98593af7-4cf6-4cfd-8947-bc6cfae07229"),
+                            Alias = "administrator:account:edit",
+                            Description = "Pode editar suas configurações de conta",
+                            Name = "Pode editar suas configurações de conta",
+                            RoleId = new Guid("ec9f1294-3ac6-4496-9ace-13a10056633c")
+                        },
+                        new
+                        {
                             Id = new Guid("6b7fc3b4-6c16-41ee-a6ab-0c7dfd21d41e"),
                             Alias = "administrator:company:vacancy:create",
                             Description = "Pode criar vagas no sistema",
@@ -253,6 +261,14 @@ namespace _4erp.infrastructure.Migrations
                         },
                         new
                         {
+                            Id = new Guid("3f87c5ea-edc8-4826-b67b-396a0d134bef"),
+                            Alias = "administrator:company:account:edit",
+                            Description = "Pode editar suas configurações de conta",
+                            Name = "Pode editar suas configurações de conta",
+                            RoleId = new Guid("6f8a65c6-fc8f-439f-bb92-28c2253c000b")
+                        },
+                        new
+                        {
                             Id = new Guid("44a3dc2f-1810-4957-8bd3-0e526ee8d44f"),
                             Alias = "administrator:person:vacancy:view",
                             Description = "Pode criar vagas no sistema",
@@ -281,6 +297,14 @@ namespace _4erp.infrastructure.Migrations
                             Alias = "administrator:person:candidate:remove",
                             Description = "Pode remover vagas no sistema",
                             Name = "Pode remover sua candidatura de uma vaga",
+                            RoleId = new Guid("786bc7e7-8365-4d08-90fb-7fc26d284d16")
+                        },
+                        new
+                        {
+                            Id = new Guid("a77e474c-6047-4914-941d-29babbbe07b0"),
+                            Alias = "administrator:person:account:edit",
+                            Description = "Pode editar suas configurações de conta",
+                            Name = "Pode editar suas configurações de conta",
                             RoleId = new Guid("786bc7e7-8365-4d08-90fb-7fc26d284d16")
                         });
                 });

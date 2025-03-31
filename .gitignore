@@ -27,6 +27,7 @@ packages/
 project.lock.json
 global.json
 appsettings.Production.json
+appsettings.Local.json
 .nuget/
 
 # Configuração de usuário no Visual Studio
