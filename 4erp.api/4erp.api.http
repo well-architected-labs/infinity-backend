@@ -1,0 +1,6 @@
+@_4erp.api_HostAddress = http://localhost:5157
+
+GET {{_4erp.api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

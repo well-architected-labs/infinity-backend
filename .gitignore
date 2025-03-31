@@ -1,0 +1,58 @@
+# Pastas e arquivos gerados pelo build
+bin/
+obj/
+out/
+
+# Logs, banco de dados e temporários do sistema
+*.log
+*.tlog
+*.vspscc
+*.vssscc
+*.suo
+*.user
+*.cache
+*.pdb
+*.pidb
+*.mdb
+*.opendb
+
+# Configurações do Visual Studio, Rider e VS Code
+.vscode/
+.idea/
+*.sln.ide
+
+# Dependências do NuGet
+*.nupkg
+packages/
+project.lock.json
+global.json
+appsettings.Production.json
+.nuget/
+
+# Configuração de usuário no Visual Studio
+*.csproj.user
+*.suo
+*.userprefs
+
+# Arquivos gerados pelo Resharper/Rider
+.ReSharper/
+*.DotSettings.user
+
+# Configuração do Docker
+.env
+.dockerignore
+docker-compose.override.yml
+
+# Certificados e chaves SSL locais
+*.pfx
+*.p12
+
+# Banco de dados local
+*.mdf
+*.ldf
+*.sqlite
+*.db
+
+# Logs do sistema
+logs/
+*.log
